@@ -972,6 +972,12 @@ new_features:
     authentication) are supported via
     :ref:`KafkaStatsSinkConfig <envoy_v3_api_msg_extensions.stat_sinks.kafka.v3.KafkaStatsSinkConfig>`.
 
+- area: contrib
+  change: |
+    Added :ref:`LDAP proxy network filter <envoy_v3_api_msg_extensions.filters.network.ldap_proxy.v3alpha.LdapProxy>`
+    (``envoy.filters.network.ldap_proxy``) to negotiate LDAP StartTLS with upstream servers and upgrade
+    connections to TLS. The filter is experimental; see the API message for configuration.
+
 - area: tls
   change: |
     Added support for building Envoy with OpenSSL as an alternative to the default BoringSSL.
